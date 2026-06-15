@@ -7,22 +7,32 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Java 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'zulu'
+        java-version: '17'
     
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
         flutter-version: '3.24.0'
+        channel: 'stable'
         
-    - run: flutter pub get
+    - name: Get dependencies
+      run: flutter pub get
     
-    - name: Create Android folders
-      run: flutter create .
+    - name: Generate Android project
+      run: flutter create --project-name najm_delivery_flutter --platforms=android .
       
-    - run: flutter build apk --release
+    - name: Build APK Release
+      run: flutter build apk --release
     
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: app-release
+        name: Najm-Delivery-APK
         path: build/app/outputs/flutter-apk/app-release.apk
