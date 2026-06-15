@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "17858420468",
+    "firebase_url": "https://nexus-chat-2026-a33be-default-rtdb.firebaseio.com",
+    "project_id": "nexus-chat-2026-a33be",
+    "storage_bucket": "nexus-chat-2026-a33be.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17858420468:android:af3d2794ba9bc596c708a1",
+        "android_client_info": {
+          "package_name": "com.example.najm_delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17858420468-0obccmcf8rtov9h35fcnmjhaof68rees.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbdNZF0Cul-0xDS6UgEMN6MzW_vMo9ueI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17858420468-0obccmcf8rtov9h35fcnmjhaof68rees.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
