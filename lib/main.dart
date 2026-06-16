@@ -52,9 +52,9 @@ class _TrackingScreenState extends State<TrackingScreen> {
 
     try {
       DocumentSnapshot doc = await FirebaseFirestore.instance
-         .collection('shipments')
-         .doc(code)
-         .get();
+        .collection('shipments')
+        .doc(code)
+        .get();
 
       setState(() {
         if (doc.exists) {
@@ -349,7 +349,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 minimumSize: Size(double.infinity, 50),
               ),
               child: isLoading
-                 ? CircularProgressIndicator(color: Colors.white)
+                ? CircularProgressIndicator(color: Colors.white)
                   : Text('دخول', style: TextStyle(fontSize: 18, color: Colors.white)),
             ),
           ],
