@@ -11,18 +11,18 @@ if (flutterRoot == null) {
     throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
 }
 
+apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.google.gms.google-services'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    namespace "com.example.najm_delivery"
+    namespace "com.example.najm_delivery_flutter"
     compileSdkVersion 34
     ndkVersion flutter.ndkVersion
 
     defaultConfig {
-        applicationId "com.example.najm_delivery"
+        applicationId "com.example.najm_delivery_flutter"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()
